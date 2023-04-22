@@ -30,6 +30,7 @@
         :key="obj.id"
         :name="obj.name"
         :author="obj.artists[0].name"
+        :id="obj.id"
       />
     </div>
   </div>
@@ -59,7 +60,7 @@ export default {
         type: 1,
         keywords: this.searchValue,
       });
-      console.log(res);
+      // console.log(res);
       this.resultList = res.data.result.songs;
       clearTimeout(this.timer);
     },

@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <div class="main">
     <!-- 标题 -->
     <p class="title">推荐歌单</p>
-    <van-row gutter="6">
+    <van-row gutter="8">
       <van-col span="8" v-for="obj in recommendList" :key="obj.id">
         <van-image width="100%" height="3rem" fit="cover" :src="obj.picUrl" />
         <p class="song_name">{{ obj.name }}</p>
@@ -14,6 +14,7 @@
       :key="obj.id"
       :name="obj.name"
       :author="obj.song.artists[0].name"
+      :id="obj.id"
     />
   </div>
 </template>
@@ -48,6 +49,10 @@ export default {
   color: #333;
   font-size: 15px;
 }
+.main {
+  padding: 10px;
+}
+
 /* 推荐歌单 - 歌名 */
 .song_name {
   font-size: 0.346667rem;

@@ -4,7 +4,7 @@ import App from './App.vue'
 import "@/mobile/flexible" // 适配
 import "@/styles/reset.css" // 初始化样式
 import router from '@/router' // 路由对象
-import { NavBar, Tabbar, TabbarItem, Col, Row, Image as VanImage, Cell, CellGroup, Icon, Search } from 'vant';
+import { NavBar, Tabbar, TabbarItem, Col, Row, Image as VanImage, Cell, CellGroup, Icon, Search, PullRefresh, List } from 'vant';
 
 // 全局注册vant组件（按需引入）
 Vue.use(NavBar);
@@ -17,6 +17,8 @@ Vue.use(Cell);
 Vue.use(CellGroup);
 Vue.use(Icon)
 Vue.use(Search)
+Vue.use(PullRefresh)
+Vue.use(List)
 
 Vue.config.productionTip = false
 
