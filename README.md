@@ -1,6 +1,6 @@
 vue2 + vant UI框架
 # music-demo
-![1683720454906](https://github.com/xin0608/new-music-app/assets/104176827/38a8b038-dffa-4e96-8db6-a06d791dd8e5)
+![1683721725016](https://github.com/xin0608/new-music-app/assets/104176827/d3aa3d81-7213-4112-8715-a526787ecded)
 ## Project setup
 ```
 npm install
